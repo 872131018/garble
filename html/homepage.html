@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
+		<title>Home Page!</title>
+	</head>
+	<body class='text-center text-primary'>
+		<div class='container'>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Garble</a>
+					</div>
+					<div>
+						<ul class="nav navbar-nav">
+							<li data-association='column1'><a href="#">Column 1</a></li>
+							<li data-association='column1'><a href="#">Column 2</a></li> 
+							<li data-association='column1'><a href="#">Column 3</a></li> 
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div id='leftColumn' class='col-xs-4 well accordion disabled'>
+			</div>
+			<div id='middleColumn' class='col-xs-4'>
+				<div class='row'>
+					<h1>This is Garble!</h1>
+					<ul class="nav nav-pills nav-justified">
+						<li><a data-toggle="pill" href="#">Column 1</a></li>
+						<li><a data-toggle="pill" href="#">Column 2</a></li>
+						<li><a data-toggle="pill" href="#">Column 3</a></li>
+					</ul>
+				</div>
+				<div class='row'>
+					<div id='messageCenter'></div>
+				</div>
+				<div class='row'>
+					<div id='inputDiv'>
+						<div class='row well'>
+							<!-- move these to javascript, verify then insert -->
+							<video id="video" width="320" height="240" autoplay></video>
+							<button id="snap" class="btn btn-default">Snap Photo</button>
+							<canvas id="canvas" width="320" height="240"></canvas>	
+						</div>
+						<div class='row'>
+							<div id='gamerDashboard' class='btn-group-vertical well'>Turn this into the wall!</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id='rightColumn' class='col-xs-4 well accordion disabled'>
+			</div>
+		</div>
+		<!-- must load the external sources first -->
+   		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!-- then load the internal sources second -->
+        <script type="text/javascript" src="/garble/js/common/buttonManager.js"></script>
+        <script type="text/javascript" src="/garble/js/homepage/homepageScripts.js"></script>
+		<!--load the index driver last -->
+		<script src="/garble/js/homepage/homepageDriver.js"></script>
+	</body>
+</html>
