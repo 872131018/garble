@@ -43,6 +43,9 @@ $(document).ready(
 				errBack);
 		}
 		//set up the navigation menu
+		buttonManager({'action': 'setClickListener'}, {'id': 'navbarLeftColumn', 'function': 'showLeftColumn'});
+		buttonManager({'action': 'setClickListener'}, {'id': 'navbarMiddleColumn', 'function': 'showMiddleColumn'});
+		buttonManager({'action': 'setClickListener'}, {'id': 'navbarRightColumn', 'function': 'showRightColumn'});
 
 		buttonManager({'action': 'setClickListener'}, {'id': 'snap', 'function': 'takePicture'});
 	}

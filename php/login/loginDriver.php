@@ -29,7 +29,7 @@
 			if($result->num_rows > 0)
 			{
 				//case sensitive
-				$result = $result -> fetch_assoc();
+				$result = $result->fetch_assoc();
 				if($result['username'] == $_POST['username'] && $result['password'] == $_POST['password']) 
 				{
 					//set the username as a session variable for later use 

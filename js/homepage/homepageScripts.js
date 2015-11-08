@@ -1,3 +1,24 @@
+function showLeftColumn()
+{
+	$('#leftColumn').removeClass('disabled');
+	$('#middleColumn').addClass('disabled');
+	$('#rightColumn').addClass('disabled');	
+}
+
+function showMiddleColumn()
+{
+	$('#leftColumn').addClass('disabled');
+	$('#middleColumn').removeClass('disabled');
+	$('#rightColumn').addClass('disabled');	
+}
+
+function showRightColumn()
+{
+	$('#leftColumn').addClass('disabled');
+	$('#middleColumn').addClass('disabled');
+	$('#rightColumn').removeClass('disabled');	
+}
+
 function uploadImage()
 {
 	$.post('/garble/php/homepage/homepageDriver.php', 
